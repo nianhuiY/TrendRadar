@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "*/30 * * * *" # 每 30 分钟运行一次
   workflow_dispatch:
+  push:
+    branches:
+      - feater/master
+  pull_request:
+    branches:
+      - feater/master
 
 # 添加权限设置
 permissions:
