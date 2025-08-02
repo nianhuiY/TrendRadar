@@ -4,12 +4,6 @@ on:
   schedule:
     - cron: "*/30 * * * *" # 每 30 分钟运行一次
   workflow_dispatch:
-  push:
-    branches:
-      - feater/master
-  pull_request:
-    branches:
-      - feater/master
 
 # 添加权限设置
 permissions:
@@ -20,14 +14,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # - name: Checkout repository
-      #   uses: actions/checkout@v3
-
-      # 切换feater/master分支commit
-      - name: Checkout feater/master branch
+      - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          ref: feater/master
 
       - name: Set up Python
         uses: actions/setup-python@v4
