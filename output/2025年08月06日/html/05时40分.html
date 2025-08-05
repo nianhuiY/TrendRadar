@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 20</p><p>生成时间: 2025-08-06 05:40:26</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">4</td>
+                <td class="percentage">20.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752726" target="_blank" class="news-link">美联储：美国Q2严重逾期消费者贷款占比创疫情以来最高</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 05时40分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954035" target="_blank" class="news-link">墨西哥总统辛鲍姆会见美国零售巨头沃尔玛的CEO Doug McMillon，称对方确认在墨西哥的投资计划。</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 05时40分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954028" target="_blank" class="news-link">特朗普：可能向美国人派发关税红利。</a> [6] <font color='grey'>- 05时40分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954012" target="_blank" class="news-link">美国总统特朗普宣称，如果华盛顿特区不改变，他将不得不接管。 可能会将华盛顿特区“联邦化”。 将继续推进政府削减开支（裁员）的行动。</a> [19]</div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">1</td>
+                <td class="percentage">5.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954029" target="_blank" class="news-link">AMD提前量产MI350。 预计人工智能（AI）芯片收入将在三季度增长。 在商用电脑芯片市场的份额扩大。 预计年度AI收入有望达到（至少）数百亿美元。</a> <font color='red'><strong>[5]</strong></font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">5.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954036" target="_blank" class="news-link">AMD：PC芯片的终端用户消费相当强劲。 还没有看到需求“大幅提前”。 大部分中国库存并没有处于“完成商品”类别。</a> <font color='red'><strong>[1]</strong></font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">科技</td>
+                <td class="count">1</td>
+                <td class="percentage">5.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954001" target="_blank" class="news-link">纳指科技指数收跌约0.8%，半导体指数跌超1.1%，小盘股指涨0.6%</a> [27] <font color='grey'>- 05时40分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
