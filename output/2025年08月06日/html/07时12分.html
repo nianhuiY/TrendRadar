@@ -1,0 +1,119 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 25</p><p>生成时间: 2025-08-06 07:12:16</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">2</td>
+                <td class="percentage">8.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954064" target="_blank" class="news-link">韩媒：韩国扶持五大联合体开发“主权AI”</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 07时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954058" target="_blank" class="news-link">特斯拉联合创始人JB Straubel利用电动汽车废旧电池来支持人工智能（AI）数据中心。 JB Straubel帮助创立特斯拉，担任首席科技官直至2019年。 其在2017年成立Redwood Materials，以便回收电池。</a> [9]</div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">美国</td>
+                <td class="count">2</td>
+                <td class="percentage">8.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752666" target="_blank" class="news-link">美国ISM数据引爆滞胀担忧，美股美债跌，黄金涨，AMD绩后一度跌5.7%</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 07时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954063" target="_blank" class="news-link">美国卫生部在mRNA疫苗开发方面出现倒退，总统特朗普反对新冠疫苗的Robert F. Kennedy Jr.正推动重组政府免疫程序。 根据美国卫生部8月5日宣布的声明，莫德纳、Emory University、以及Tiba Biotech等的免疫工作都受到挤压。</a> <font color='red'><strong>[4]</strong></font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">机器人</td>
+                <td class="count">1</td>
+                <td class="percentage">4.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954059" target="_blank" class="news-link">世界机器人大会即将开幕，十八只概念股半年报业绩向好</a> [8] <font color='grey'>- 07时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">4.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954060" target="_blank" class="news-link">海外机构看好中国市场，QFII积极布局A股，二季度新进13股</a> [7] <font color='grey'>- 07时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">芯片 光刻机</td>
+                <td class="count">1</td>
+                <td class="percentage">4.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [知乎] <a href="https://www.zhihu.com/question/1935374812961833741" target="_blank" class="news-link">尊湃因剽窃华为芯片技术被罚 1350 万元，前海思 14 名员工获刑，这起案件对其他企业有何警示作用？</a> [20] <font color='grey'>- 07时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td class="word">科技</td>
+                <td class="count">1</td>
+                <td class="percentage">4.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954054" target="_blank" class="news-link">紧抓科技成长主线，券商建议8月A股投资轻指数重结构</a> [13] <font color='grey'>- 07时12分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
