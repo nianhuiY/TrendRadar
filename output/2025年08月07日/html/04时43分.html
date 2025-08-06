@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 18</p><p>生成时间: 2025-08-07 04:43:18</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">3</td>
+                <td class="percentage">16.67%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954615" target="_blank" class="news-link">白宫官员称，美国将对日本产品额外加征15%关税。 美国将对日本征收的关税不受现有税率水平影响。 美元兑日元维持超过0.2%的跌幅。</a> <font color='red'><strong>[1]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954611" target="_blank" class="news-link">美国旧金山联储主席戴利：FOMC可能需要再未来数月调整政策。 如果美国劳动力市场进一步放缓，那将不受人欢迎。 关税、移民的变化推高通胀、造成工人减少。 通胀和失业所面临的风险大致平衡。 美联储在压低通胀至2%方面还有更多工作要做。 关税将在短期内推高通胀，但这样的现象不会是长期性的。</a> <font color='red'><strong>[4]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954614" target="_blank" class="news-link">白宫经济顾问委员会主席Stephen Miran：如果贸易伙伴们没有恪守对美国的投资承诺，美方可能会修改协议。 供应管理协会（ISM）服务业数据不至于造成（信心）断气。 逆风已经转变为尾部风险。 需要与墨西哥敲定最终协议，美国与墨西哥的磋商进展顺利。 加拿大需要努力。 对（处理即将出现的）美联储理事职位空缺的工作正在推进之中。</a> [6]</div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">苹果 库克 iphone ipad mac ios</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954606" target="_blank" class="news-link">美股七巨头收盘播报｜苹果收涨将近5.1%，亚马逊涨4%，特斯拉涨超3.6%</a> [9] <font color='grey'>- 04时43分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954607" target="_blank" class="news-link">爱彼迎（Airbnb）授权60亿美元股票回购计划。</a> [8] <font color='grey'>- 04时43分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">科技</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954602" target="_blank" class="news-link">标普500指数收涨45.87点，涨幅0.73%，报6345.06点。 道琼斯工业平均指数收涨81.38点，涨幅0.18%，报44193.12点。 纳斯达克综合指数（纳指）收涨252.87点，涨幅1.21%，报21169.42点。 纳斯达克100指数收涨296.48点，涨幅1.29%，报23315.04点。 纳斯达克科技市值加权指数收涨1.42%，报2065.5112点。 纳斯达克生物科技指数收跌1.25%，报4452.17点。 罗素2000指数收跌0.20%，报2221.29点。 费城半导体指数收跌0.21%，报5550.30点。 费城证交所KBW银行指数收跌0.19%，报140.70点。 道琼斯KBW地区银行指数收跌0.82%，报114.59点。 恐慌指数VIX收跌6.22%，报16.74。</a> [11]</div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
