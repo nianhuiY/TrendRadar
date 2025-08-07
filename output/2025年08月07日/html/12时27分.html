@@ -1,0 +1,135 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 101</p><p>生成时间: 2025-08-07 12:27:09</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">国产 中国</td>
+                <td class="count">9</td>
+                <td class="percentage">8.91%</td>
+                <td class="titles"><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/0749008.html" target="_blank" class="news-link">中国今年首七月货物贸易进出口同比增3.5%</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/0749005.html" target="_blank" class="news-link">中国多省审计披露以旧换新存在骗补问题</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752833" target="_blank" class="news-link">中国7月按美元计出口同比增长7.2%，进口增长4.1%，高技术产品前7个月进出口同比增8.4%</a> [7] <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [抖音] <a href="https://www.douyin.com/hot/2194739" target="_blank" class="news-link">理想中国汽研致歉</a> [13] <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954823" target="_blank" class="news-link">中国保险资产管理业协会或将更名为“中国银行保险资产管理业协会”</a> [19] <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954822" target="_blank" class="news-link">海关：中国7月原油进口4,720.4万吨；1-7月累计进口32,656.8万吨，同比增2.8%。 7月成品油出口534.1万吨；1-7月累计出口3,251.6万吨，同比降7.3%。 7月煤及褐煤进口3,560.9万吨；1-7月累计进口25,730.5万吨，同比降13%。 7月天然气进口1,063.2万吨；1-7月累计进口7,014.4万吨，同比降6.9%。</a> [20]</div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954820" target="_blank" class="news-link">海关：中国7月大豆进口1,166.6万吨；1-7月累计大豆进口6,103.5万吨，同比增4.6%。</a> [21] <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954819" target="_blank" class="news-link">海关：中国7月铁矿砂及其精矿进口10,462.3万吨；1-7月累计进口69,656.9万吨，同比降2.3%。 7月未锻轧铜及铜材进口48.0万吨；1-7月累计进口311.3万吨，同比降2.6%。 7月铜矿砂及其精矿进口256.0万吨；1-7月累计进口1,731.4万吨，同比增8%。 7月未锻轧铝及铝材出口54.2万吨；1-7月累计出口346.2万吨，同比降7.9%。 7月钢材出口983.6万吨；1-7月累计出口6,798.3万吨，同比增11.4%。</a> [22]</div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954817" target="_blank" class="news-link">海关：中国7月稀土出口5,994.3吨；1-7月累计稀土出口38,563.6吨，同比增13.3%。</a> [24] <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">芯片 光刻机</td>
+                <td class="count">3</td>
+                <td class="percentage">2.97%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954830" target="_blank" class="news-link">8月7日午间收评：创业板指半日跌0.52%，半导体芯片股逆市大涨</a> [14] <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954825" target="_blank" class="news-link">A股半导体芯片股再度拉升，晶华微直线涨停，富满微、盈方微、大为股份、斯达半导等多股封板，东芯股份、芯导科技、新恒汇等涨超10%。</a> [18] <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [澎湃新闻] <a href="https://m.thepaper.cn/newsDetail_forward_31323497" target="_blank" class="news-link">特朗普称美将对芯片和半导体征收约100%的关税</a> [20] <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">美国</td>
+                <td class="count">2</td>
+                <td class="percentage">1.98%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752832" target="_blank" class="news-link">关税协议只是开始？各国都在“磨”美国，寻求各种豁免</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 12时27分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752826" target="_blank" class="news-link">“零工时代”！美国四大“自由职业”平台同日发财报，自由现金流都大幅上涨</a> [6] <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">chatgpt Sam Altman openai</td>
+                <td class="count">1</td>
+                <td class="percentage">0.99%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954844" target="_blank" class="news-link">苹果公司 AI 团队员工正流向竞争对手，包括OpenAI。（英国金融时报）</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">苹果 库克 iphone ipad mac ios</td>
+                <td class="count">1</td>
+                <td class="percentage">0.99%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752829" target="_blank" class="news-link">除了库克，特朗普昨天还见了老黄，所以市场不怕“半导体关税”？</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">1</td>
+                <td class="percentage">0.99%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3752835" target="_blank" class="news-link">Shopify，AI 时代的全球商业操作系统？</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">1</td>
+                <td class="percentage">0.99%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2954835" target="_blank" class="news-link">印度7月份乘用车零售销量同比下降0.81%，汽车零售总额同比下降4.31%。</a> [11] <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td class="word">机器人</td>
+                <td class="count">1</td>
+                <td class="percentage">0.99%</td>
+                <td class="titles"><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2108295" target="_blank" class="news-link">人形机器人轻量化趋势下PEEK材料受热捧 多家上市公司透露业务新进展|聚焦</a> [11] <font color='grey'>- 12时27分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
