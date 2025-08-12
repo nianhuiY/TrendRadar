@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 20</p><p>生成时间: 2025-08-13 05:11:24</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">7</td>
+                <td class="percentage">35.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753190" target="_blank" class="news-link">美国财长贝森特暗示美联储应对9月降息50基点持开放态度</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 05时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957298" target="_blank" class="news-link">周二（8月12日）纽约尾盘，美元兑日元跌0.20%，报147.86日元，北京时间20:27涨至148.52日元刷新日高，20:30发布美国CPI数据时跳水，00:00之前又出现两波快速的下挫行情，23:44跌至147.58日元刷新日低。</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 05时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753184" target="_blank" class="news-link">特朗普提名的美国劳工统计局局长建议暂停发布月度就业报告，白宫表态仍计划发布</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 05时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957297" target="_blank" class="news-link">周二（8月12日）纽约尾盘，现货黄金涨0.18%，报3348.25美元/盎司。 COMEX黄金期货跌0.15%，报3399.60美元/盎司，北京时间22:19（美国CPI通胀数据发布后，美股开盘之后）跌至3379.10美元刷新日低，随后快速反弹，在23:29涨至3410.80美元刷新日高。</a> <font color='red'><strong>[4]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957296" target="_blank" class="news-link">美国财长贝森特：总统特朗普甚至考虑过，提名前美联储主席耶伦（再次）出任美联储主席。（福克斯商业新闻）</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 05时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957294" target="_blank" class="news-link">行业周报：美国上周API原油库存增超150万桶</a> [7] <font color='grey'>- 05时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957293" target="_blank" class="news-link">美联储巴尔金：美国通胀将比人们想象的更加温和。 消费者感到有些捉襟见肘（囊中羞涩）。（华尔街日报）</a> [8]</div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">2</td>
+                <td class="percentage">10.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957275" target="_blank" class="news-link">纳斯达克金龙中国指数收涨1.49%，报7591.67点。 热门中概股里，腾讯音乐初步收涨约12%，小米涨4%，Boss直聘、阿里巴巴涨超3.2%，拼多多涨3.1%，网易涨1.5%，百胜中国涨0.8%，台积电涨0.6%，理想跌0.3%，小马智行跌4%，小鹏跌6%，蔚来跌8.3%。 ETF中，富时中国3倍做多ETF（YINN）收涨4.95%，“中国龙”Roundhill China Dragons ETF（DRAG）收涨2.45%，中概互联网指数ETF（KWEB）收涨2.34%，中国科技指数ETF（CQQQ）收涨1.17%。</a> [19]</div><br><div class='new-title'>🆕 [微博] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E7%89%B9%E6%9C%97%E6%99%AE%E8%AE%A9%E4%B8%AD%E5%9B%BD%E5%A2%9E%E5%8A%A0%E5%A4%A7%E8%B1%86%E8%AE%A2%E5%8D%95%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26cate%3D5001%26stream_entry_id%3D31%26realpos%3D25%26band_rank%3D25%26q%3D%2523%25E4%25B8%25AD%25E6%2596%25B9%25E5%259B%259E%25E5%25BA%2594%25E7%2589%25B9%25E6%259C%2597%25E6%2599%25AE%25E8%25AE%25A9%25E4%25B8%25AD%25E5%259B%25BD%25E5%25A2%259E%25E5%258A%25A0%25E5%25A4%25A7%25E8%25B1%2586%25E8%25AE%25A2%25E5%258D%2595%2523%26dgr%3D0%26filter_type%3Drealtimehot%26pos%3D25%26c_type%3D31%26flag%3D0%26lcate%3D5001%26display_time%3D1755032870%26pre_seqid%3D1755032870595056488737" target="_blank" class="news-link">中方回应特朗普让中国增加大豆订单</a> [25] <font color='grey'>- 05时11分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">1</td>
+                <td class="percentage">5.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753185" target="_blank" class="news-link">AI明星公司Perplexity提议，345亿美元收购谷歌旗下Chrome</a> [9] <font color='grey'>- 05时11分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">1</td>
+                <td class="percentage">5.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957295" target="_blank" class="news-link">周二（8月12日），彭博电动汽车价格回报指数涨0.09%，报2910.46点。</a> [6] <font color='grey'>- 05时11分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
