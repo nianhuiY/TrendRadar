@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 32</p><p>生成时间: 2025-08-14 07:38:00</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">国产 中国</td>
+                <td class="count">4</td>
+                <td class="percentage">12.5%</td>
+                <td class="titles"><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/1449562.html" target="_blank" class="news-link">消息人士：中国政府就采购英伟达晶片约谈科企</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 07时38分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/1449561.html" target="_blank" class="news-link">不满捷克总统见达赖喇嘛 中国称不与他进行任何交往</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 07时38分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/1449560.html" target="_blank" class="news-link">沈泽玮：南中国海中国自家船相撞的警讯</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 07时38分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/1449557.html" target="_blank" class="news-link">19岁女大学生遭精神病史男子捅刺多刀身亡 引中国舆论愤慨</a> [7] <font color='grey'>- 07时38分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">2</td>
+                <td class="percentage">6.25%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2957963" target="_blank" class="news-link">外资大幅加仓，QFII上半年末持仓汽车行业市值最高</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 07时38分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2114607" target="_blank" class="news-link">【早报】7月金融数据出炉！M2同比增长8.8%；两部门征求意见：辅助驾驶不能当自动驾驶</a> [9] <font color='grey'>- 07时38分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">1</td>
+                <td class="percentage">3.12%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753275" target="_blank" class="news-link">桥水二季度大举增持英伟达，加仓谷歌、微软、Meta，清仓阿里等中概</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 07时38分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">1</td>
+                <td class="percentage">3.12%</td>
+                <td class="titles"><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/politics/202508/1449559.html" target="_blank" class="news-link">为防转运中国 美国据报在人工智能晶片嵌入追踪器</a> <font color='red'><strong>[5]</strong></font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">美国</td>
+                <td class="count">1</td>
+                <td class="percentage">3.12%</td>
+                <td class="titles"><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/politics/202508/1449554.html" target="_blank" class="news-link">美国财长促美联储降息至少1.5百分点</a> [10] <font color='grey'>- 07时38分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
