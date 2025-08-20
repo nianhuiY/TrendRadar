@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 48</p><p>生成时间: 2025-08-20 22:42:15</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">8</td>
+                <td class="percentage">16.67%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961323" target="_blank" class="news-link">WTI原油期货维持超过1.2%的涨幅，在美国政府版原油库存周报发布后持稳于62.60美元/桶附近。</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961320" target="_blank" class="news-link">美国8月15日当周EIA原油库存变动 -601.4万桶，预期 -85万桶，前值 303.6万桶。</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961318" target="_blank" class="news-link">美国8月15日当周EIA精炼厂设备利用率变化 0.2%，预期 -0.95%，前值 -0.5%。</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961319" target="_blank" class="news-link">美国8月15日当周EIA汽油库存变动 -272万桶，预期 -31.7万桶，前值 -79.2万桶。</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961316" target="_blank" class="news-link">美国8月15日当周EIA库欣地区原油库存变动 41.9万桶，前值 4.5万桶。</a> [6] <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961317" target="_blank" class="news-link">美国8月15日当周EIA精炼油库存变动 234.3万桶，预期 147.8万桶，前值 71.4万桶。</a> [7] <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2120680" target="_blank" class="news-link">美国关税威胁压力显现：印度对俄罗斯原油进口量大幅下跌</a> [12] <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961310" target="_blank" class="news-link">提醒：北京时间22:30，美国能源信息署（EIA）将发布政府版原油库存周报。</a> [13] <font color='grey'>- 22时42分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">3</td>
+                <td class="percentage">6.25%</td>
+                <td class="titles"><div class='new-title'>🆕 [澎湃新闻] <a href="https://m.thepaper.cn/newsDetail_forward_31437076" target="_blank" class="news-link">昆明台记者采访遭粗暴阻挠，中国记协：正当采访权利不容践踏</a> [17] <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7540582075070418441/" target="_blank" class="news-link">中国神话如何激发全球吸引力</a> [28] <font color='grey'>- 22时42分</font></div><br><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7540626039823666707/" target="_blank" class="news-link">媒体人：二十年间中国武器翻天覆地</a> [30] <font color='grey'>- 22时42分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">DeepSeek 梁文锋</td>
+                <td class="count">1</td>
+                <td class="percentage">2.08%</td>
+                <td class="titles"><div class='new-title'>🆕 [知乎] <a href="https://www.zhihu.com/question/1941220591475626436" target="_blank" class="news-link">如何评价 2025 年 8 月 19 日 DeepSeek 新发布的 V3.1 模型？性能上有哪些优化和提升？</a> [19] <font color='grey'>- 22时42分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">科技</td>
+                <td class="count">1</td>
+                <td class="percentage">2.08%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961315" target="_blank" class="news-link">李强在北京调研生物医药产业发展时强调：加大高质量科技供给和政策支持，着力推动生物医药产业提质升级</a> [8] <font color='grey'>- 22时42分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
