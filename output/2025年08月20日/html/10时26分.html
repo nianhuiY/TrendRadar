@@ -1,0 +1,119 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 124</p><p>生成时间: 2025-08-20 10:26:22</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">国产 中国</td>
+                <td class="count">5</td>
+                <td class="percentage">4.03%</td>
+                <td class="titles"><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/opinion/202508/2050143.html" target="_blank" class="news-link">美印关系陷僵局，特朗普“助力”印度重新向中国靠拢</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [bilibili 热搜] <a href="https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E7%9C%9F%E6%9C%89%E7%A7%BB%E5%B1%B1%E8%AE%A1%E5%88%92%E5%90%97" target="_blank" class="news-link">中国真有移山计划吗</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/china/202508/2050140.html" target="_blank" class="news-link">梁文道播客在中国平台下架 多个社媒账号被封</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/politics/202508/2050138.html" target="_blank" class="news-link">美国施压下印度加深与中国联系 莫迪期待与习近平会面</a> [7] <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2960862" target="_blank" class="news-link">9月3日阅兵是全面推进中国式现代化进入新征程的首次阅兵</a> [9] <font color='grey'>- 10时26分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">4</td>
+                <td class="percentage">3.23%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753690" target="_blank" class="news-link">A股震荡走低，创业板跌超1%，AI硬件股集体调整，港股集体下跌，东方甄选涨超10%，国债反弹，商品下跌</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [华尔街见闻] <a href="https://wallstreetcn.com/articles/3753683" target="_blank" class="news-link">久违的美国科技股大跌，AI和数字币领跌，发生了什么？</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753683" target="_blank" class="news-link">久违的美国科技股大跌，AI和数字币领跌，发生了什么？</a> [6] <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [百度热搜] <a href="https://www.baidu.com/s?wd=%E9%95%BF%E6%B2%99AI%E4%BC%81%E4%B8%9A%E7%99%BE%E4%B8%87%E5%B9%B4%E8%96%AA%E6%8B%9B%E5%BA%94%E5%B1%8A%E7%94%9F" target="_blank" class="news-link">长沙AI企业百万年薪招应届生</a> [27] <font color='grey'>- 10时26分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">科技</td>
+                <td class="count">3</td>
+                <td class="percentage">2.42%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753689" target="_blank" class="news-link">二手机做到行业第三的闪回科技IPO：年销10亿为何仍然难盈利？</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2960836" target="_blank" class="news-link">恒生科技指数跌超1%。快手跌5%，京东健康跌超3%，舜宇光学科技逆市拉升涨超6%。</a> [23] <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2960830" target="_blank" class="news-link">A股光伏板块开盘活跃，华民股份竞价涨停，艾能聚涨超10%，亚玛顿、弘元绿能、海优新材、晶澳科技等多股高开，消息上，光伏再开反内卷会议，知情人士表示，备受瞩目的细节探讨将在今明两天展开。</a> [26] <font color='grey'>- 10时26分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">美国</td>
+                <td class="count">2</td>
+                <td class="percentage">1.61%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2960874" target="_blank" class="news-link">美国财长：美中就经贸问题进行了“非常良好的对话”，当前工作开展顺利</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 10时26分</font></div><br><div class='new-title'>🆕 [联合早报] <a href="https://www.zaochenbao.com/news/world/202508/2050137.html" target="_blank" class="news-link">美国巴尔的摩港一货船爆炸 航道封锁</a> [8] <font color='grey'>- 10时26分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">1</td>
+                <td class="percentage">0.81%</td>
+                <td class="titles"><div class='new-title'>🆕 [知乎] <a href="https://www.zhihu.com/question/1940843312476067731" target="_blank" class="news-link">理想汽车 CEO 李想宴请卡车司机并表示对撞测试有冒失但无意冒犯，这种做法能否有效缓解争议？</a> [16] <font color='grey'>- 10时26分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td class="word">月球 登月 火星 宇宙 飞船</td>
+                <td class="count">1</td>
+                <td class="percentage">0.81%</td>
+                <td class="titles"><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2120110" target="_blank" class="news-link">黑神话宇宙开启！游戏科学不做“猴”了？创始人冯骥发文回应</a> [9] <font color='grey'>- 10时26分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
