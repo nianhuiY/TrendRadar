@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 15</p><p>生成时间: 2025-08-21 05:10:43</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">科技</td>
+                <td class="count">2</td>
+                <td class="percentage">13.33%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753763" target="_blank" class="news-link">科技股抛售加剧，标普500市值一度蒸发万亿美元，Palantir盘中重挫9%</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 05时10分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961414" target="_blank" class="news-link">航空业ETF收跌将近2%，和可选消费ETF领跌美股行业ETF，标普科技板块跌约0.8%</a> [7] <font color='grey'>- 05时10分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">6.67%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961401" target="_blank" class="news-link">纳斯达克金龙中国指数收涨0.33%，报7606.75点。 热门中概股里，网易初步收涨1.7%，小米、百胜中国、蔚来、腾讯至多涨约0.2%，京东、阿里巴巴、拼多多至多收跌约0.9%，理想、台积电、小鹏跌超1%，百度跌2.5%。 ETF中，富时中国3倍做多ETF（YINN）收涨1.39%，中国科技指数ETF（CQQQ）收涨1.31%，中概互联网指数ETF（KWEB）收涨0.03%，“中国龙”Roundhill China Dragons ETF（DRAG）则收跌0.21%。 XtrackersHarvest中证50（ASHS）收涨2.24%，德银嘉实沪深300指数ETF（ASHR）收涨2.20%。</a> [18]</div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">美国</td>
+                <td class="count">1</td>
+                <td class="percentage">6.67%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961419" target="_blank" class="news-link">周三（8月20日）纽约尾盘，美国10年期基准国债收益率跌1.56个基点，报4.2907%，在窄幅震荡中于北京时间16:00刷新日高至4.3001%，随后持续下挫，01:25跌至4.2732%刷新日低，美联储发布FOMC会议纪要之后跌幅略微收窄。 两年期美债收益率跌0.23个基点，报3.7457%，20:00之前大致持平，随后呈现出V形走势——22:54刷新日低至3.7121%、美联储会议纪要发布后继续收复失地。</a> <font color='red'><strong>[2]</strong></font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
