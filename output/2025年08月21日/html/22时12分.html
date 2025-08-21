@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 55</p><p>生成时间: 2025-08-21 22:12:22</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">16</td>
+                <td class="percentage">29.09%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753838" target="_blank" class="news-link">美国8月Markit制造业PMI初值 53.3，预期 49.7，前值 49.8</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961955" target="_blank" class="news-link">据美国纽约联储数据，上个交易日（8月20日）担保隔夜融资利率（SOFR）报4.31%，之前一天报4.33%。 上个交易日有效的联邦基金利率报4.33%，之前一天报4.33%。</a> <font color='red'><strong>[3]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961953" target="_blank" class="news-link">美国7月成屋销售价格中位数同比上升0.2%，创两年来最慢升幅。</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753833" target="_blank" class="news-link">劳动力市场降温愈发明显，美国上周首申人数意外飙升，续请失业金人数升至四年高位</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961950" target="_blank" class="news-link">美国7月谘商会领先指标环比 -0.1%，预期 -0.1%，前值 -0.3%。</a> [7] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961949" target="_blank" class="news-link">美国7月成屋销售总数年化环比 2%，预期 -0.3%，前值 -2.7%。</a> [8] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961948" target="_blank" class="news-link">美国7月成屋销售总数年化 401万户，预期 392万户，前值 393万户。</a> [9] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961946" target="_blank" class="news-link">美国联邦住房金融局(FHFA)局长：特朗普尚未就由哪家银行主导房利美和房地美重返公开市场事宜作出决定。</a> [11] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961941" target="_blank" class="news-link">美国制造业扩张速度创2022年以来最快，受需求带动</a> [15] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961940" target="_blank" class="news-link">美国8月标普全球制造业PMI初值为53.3，创39个月新高。 美国8月标普全球服务业PMI初值为55.4，创2个月新低。 美国8月标普全球综合PMI初值为55.4，创9个月新高。</a> [16]</div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961938" target="_blank" class="news-link">美国8月PMI数据公布后，美元指数短线走高，触及日内新高，现涨0.22%；美国两年期和五年期国债收益率升至日内高点。</a> [18] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961936" target="_blank" class="news-link">美国8月Markit综合PMI初值 55.4，预期 53.5，前值 55.1。</a> [20] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961935" target="_blank" class="news-link">美国8月Markit服务业PMI初值 55.4，预期 54.2，前值 55.7。</a> [21] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961934" target="_blank" class="news-link">美国8月Markit制造业PMI初值 53.3，预期 49.7，前值 49.8。</a> [22] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961932" target="_blank" class="news-link">美国国家公路交通安全局调查特斯拉迟报车辆事故事件。</a> [24] <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961926" target="_blank" class="news-link">美国失业金申请增加，沃尔玛业绩不及预期，美股三大股指开盘走低</a> [29] <font color='grey'>- 22时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">2</td>
+                <td class="percentage">3.64%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753737" target="_blank" class="news-link">英伟达下周财报再超预期？聚焦三大关键——AI需求、Blackwell产能与中国市场</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961928" target="_blank" class="news-link">深圳金融监管局：截至6月末 深圳AIC股权投资基金规模达51.6亿元</a> [28] <font color='grey'>- 22时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">国产 中国</td>
+                <td class="count">2</td>
+                <td class="percentage">3.64%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961952" target="_blank" class="news-link">中国投资进入格鲁吉亚是否有潜力？哪些领域对中企具有吸引力？驻格大使回应</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 22时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/member/articles/3753836" target="_blank" class="news-link">中国新消费：结构性分化下的投资主线</a> [7] <font color='grey'>- 22时12分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
