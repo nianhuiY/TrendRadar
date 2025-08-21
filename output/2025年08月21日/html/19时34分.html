@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 57</p><p>生成时间: 2025-08-21 19:34:48</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">4</td>
+                <td class="percentage">7.02%</td>
+                <td class="titles"><div class='new-title'>🆕 [bilibili 热搜] <a href="https://search.bilibili.com/all?keyword=%E6%B1%BD%E8%BD%A6%E5%8C%BAUP%E4%B8%BB%E5%90%88%E4%BC%99%E5%86%8D%E5%B0%B1%E4%B8%9A" target="_blank" class="news-link">汽车区UP主合伙再就业</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 19时34分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753822" target="_blank" class="news-link">美国重申对欧盟15%关税上限，称对欧盟汽车的关税可能在几周内降低</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 19时34分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961854" target="_blank" class="news-link">欧盟官员Šefčovič：欧盟-美国贸易声明是工作的开端，而非终结。 该框架未来可能扩展，覆盖更多行业。 美国对欧盟汽车征收15%关税的措施将自8月1日起追溯性生效。</a> <font color='red'><strong>[5]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961844" target="_blank" class="news-link">国家氢能汽车产业计量测试中心获批筹建</a> [10] <font color='grey'>- 19时34分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">3</td>
+                <td class="percentage">5.26%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753819" target="_blank" class="news-link">中国石化上半年营收同比下降10.6%，净利下滑39.8%，公司下调资本支出计划 | 财报见闻</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 19时34分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2121782" target="_blank" class="news-link">超越日本，中国成为亚洲最大ETF市场，三大因素继续推动高增长</a> [13] <font color='grey'>- 19时34分</font></div><br><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7540948908369776164/" target="_blank" class="news-link">俄乌和谈地点会选在中国吗</a> [27] <font color='grey'>- 19时34分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">美国</td>
+                <td class="count">3</td>
+                <td class="percentage">5.26%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961848" target="_blank" class="news-link">前美国圣路易斯联储主席布拉德（James “Jim” Bullard）：已与贝森特讨论了美联储主席职位。 目前利率处于高位，到2026年或可降息100个基点。 视后续数据情况，美联储在2026年或可采取更多行动。 美联储还必须注意保护美元的储备货币地位。 美国债务反映的是支出问题。 仍对美国经济相当乐观。</a> [8]</div><br><div class='new-title'>🆕 [百度热搜] <a href="https://www.baidu.com/s?wd=%E7%BE%8E%E5%9B%BD%E4%B8%8E%E6%AC%A7%E7%9B%9F%E5%B0%B1%E8%B4%B8%E6%98%93%E5%8D%8F%E5%AE%9A%E6%A1%86%E6%9E%B6%E8%BE%BE%E6%88%90%E4%B8%80%E8%87%B4" target="_blank" class="news-link">美国与欧盟就贸易协定框架达成一致</a> [10] <font color='grey'>- 19时34分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961843" target="_blank" class="news-link">欧盟与美国就敲定贸易协议的联合声明达成一致</a> [11] <font color='grey'>- 19时34分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">DeepSeek 梁文锋</td>
+                <td class="count">1</td>
+                <td class="percentage">1.75%</td>
+                <td class="titles"><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2121646" target="_blank" class="news-link">DeepSeek新版本，针对下一代国产芯片做了优化</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 19时34分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
