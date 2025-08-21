@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 53</p><p>生成时间: 2025-08-21 17:12:58</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">3</td>
+                <td class="percentage">5.66%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/member/articles/3753811" target="_blank" class="news-link">美国版“大基金”：政府战略入股半导体企业为什么会让市场下跌？</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 17时12分</font></div><br><div class='new-title'>🆕 [百度热搜] <a href="https://www.baidu.com/s?wd=%E7%BE%8E%E5%9B%BD%E5%8F%AF%E8%83%BD%E5%AF%B9%E5%A7%94%E5%86%85%E7%91%9E%E6%8B%89%E5%8A%A8%E6%AD%A6+%E4%B8%AD%E6%96%B9%E8%A1%A8%E6%80%81" target="_blank" class="news-link">美国可能对委内瑞拉动武 中方表态</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 17时12分</font></div><br><div class='new-title'>🆕 [百度热搜] <a href="https://www.baidu.com/s?wd=%E7%BE%8E%E5%9B%BD%E6%B3%A2%E9%9F%B3%E5%AE%A2%E6%9C%BA%E9%A3%9E%E8%A1%8C%E6%97%B6%E6%9C%BA%E7%BF%BC%E2%80%9C%E6%8E%89%E4%BA%86%E4%B8%80%E5%9D%97%E2%80%9D" target="_blank" class="news-link">美国波音客机飞行时机翼“掉了一块”</a> [13] <font color='grey'>- 17时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">2</td>
+                <td class="percentage">3.77%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753808" target="_blank" class="news-link">快手Q2营收、净利润双双超预期，可灵AI收入破2.5亿，宣派20亿港元特别股息 | 财报见闻</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 17时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753791" target="_blank" class="news-link">AI云增长强于预期，但广告收入下滑，百度面临“AI转型阵痛”</a> [13] <font color='grey'>- 17时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">国产 中国</td>
+                <td class="count">2</td>
+                <td class="percentage">3.77%</td>
+                <td class="titles"><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2121354" target="_blank" class="news-link">半导体强势拉升点燃市场，国产算力、消费电子成资金追逐新焦点</a> [10] <font color='grey'>- 17时12分</font></div><br><div class='new-title'>🆕 [微博] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E7%8E%8B%E6%A5%9A%E9%92%A6%E4%B8%AD%E5%9B%BD%E5%A4%A7%E6%BB%A1%E8%B4%AF%E8%BA%AB%E5%85%BC%E4%B8%89%E9%A1%B9%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26flag%3D1%26c_type%3D31%26lcate%3D5001%26pos%3D23%26cate%3D5001%26q%3D%2523%25E7%258E%258B%25E6%25A5%259A%25E9%2592%25A6%25E4%25B8%25AD%25E5%259B%25BD%25E5%25A4%25A7%25E6%25BB%25A1%25E8%25B4%25AF%25E8%25BA%25AB%25E5%2585%25BC%25E4%25B8%2589%25E9%25A1%25B9%2523%26band_rank%3D24%26stream_entry_id%3D31%26realpos%3D24%26dgr%3D0%26filter_type%3Drealtimehot%26display_time%3D1755767440%26pre_seqid%3D175576744000302295004112" target="_blank" class="news-link">王楚钦中国大满贯身兼三项</a> [24] <font color='grey'>- 17时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">DeepSeek 梁文锋</td>
+                <td class="count">1</td>
+                <td class="percentage">1.89%</td>
+                <td class="titles"><div class='new-title'>🆕 [抖音] <a href="https://www.douyin.com/hot/2210765" target="_blank" class="news-link">DeepSeek-V3.1正式发布</a> [20] <font color='grey'>- 17时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">1</td>
+                <td class="percentage">1.89%</td>
+                <td class="titles"><div class='new-title'>🆕 [澎湃新闻] <a href="https://m.thepaper.cn/newsDetail_forward_31436530" target="_blank" class="news-link">拟收购零跑汽车10%股份？中国一汽官方回应：不实信息</a> [20] <font color='grey'>- 17时12分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
