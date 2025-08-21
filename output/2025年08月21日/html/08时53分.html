@@ -1,0 +1,119 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 111</p><p>生成时间: 2025-08-21 08:53:31</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">国产 中国</td>
+                <td class="count">6</td>
+                <td class="percentage">5.41%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961502" target="_blank" class="news-link">“日非峰会”召开，日媒炒作石破茂讲话，竟拿中国说事</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [凤凰网] <a href="https://news.ifeng.com/c/8lzWA2foIpt" target="_blank" class="news-link">胡锡进：美国财长骂印度是奸商，中国得存个心眼</a> [7] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7540655167738220058/" target="_blank" class="news-link">国产剧“渣爹”赛道异军突起</a> [8] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961490" target="_blank" class="news-link">中国即将发行或正在发行的地方政府债</a> [13] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961489" target="_blank" class="news-link">中国即将发行或正在发行的国债和政策性金融债</a> [14] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7540595548605124142/" target="_blank" class="news-link">美为何称印度是在牟利中国完全不同</a> [18] <font color='grey'>- 08时53分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">美国</td>
+                <td class="count">4</td>
+                <td class="percentage">3.6%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753766" target="_blank" class="news-link">“美国农民难以长期承受”，美大豆协会呼吁特朗普取消关税</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2121219" target="_blank" class="news-link">特朗普重申：美国将不再批准光伏或风电项目</a> [6] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [凤凰网] <a href="https://news.ifeng.com/c/8lyLAOOI93X" target="_blank" class="news-link">美国这“窟窿”，老大了</a> [6] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2961484" target="_blank" class="news-link">韩国和美国将恢复核磋商小组会议。（韩国《朝鲜日报》）</a> [19] <font color='grey'>- 08时53分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">2</td>
+                <td class="percentage">1.8%</td>
+                <td class="titles"><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2121189" target="_blank" class="news-link">谷歌发布Pixel 10系列手机：AI全面加持，直面苹果挑战</a> [11] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2121229" target="_blank" class="news-link">俄方有向印度出口液化天然气的潜力 谷歌发布Pixel 10系列手机 | 环球市场</a> [12] <font color='grey'>- 08时53分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">2</td>
+                <td class="percentage">1.8%</td>
+                <td class="titles"><div class='new-title'>🆕 [抖音] <a href="https://www.douyin.com/hot/2209948" target="_blank" class="news-link">卢伟冰：小米汽车不参与价格战</a> [11] <font color='grey'>- 08时53分</font></div><br><div class='new-title'>🆕 [抖音] <a href="https://www.douyin.com/hot/2209658" target="_blank" class="news-link">吉利汽车回应基础流量等权益疑问</a> [18] <font color='grey'>- 08时53分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">苹果 库克 iphone ipad mac ios</td>
+                <td class="count">1</td>
+                <td class="percentage">0.9%</td>
+                <td class="titles"><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7540806881028099593/" target="_blank" class="news-link">苹果店回应女演员曝“走光楼梯”</a> [16] <font color='grey'>- 08时53分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td class="word">科技</td>
+                <td class="count">1</td>
+                <td class="percentage">0.9%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3753708" target="_blank" class="news-link">科技股探底反弹，纳指仍跌近0.7%，道指惊险收涨，黄金、原油、加密货币齐反弹</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 08时53分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
