@@ -1,0 +1,95 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 14</p><p>生成时间: 2025-08-23 04:13:00</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">4</td>
+                <td class="percentage">28.57%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2962704" target="_blank" class="news-link">本周，标普500指数累涨约0.1%，道指累涨1.5%，纳指累跌0.5%，纳斯达克100指数累跌0.9%，半导体指数大致持平、费城银行指数涨3.5%，生物科技指数涨0.8%，罗素2000指数涨3.1%；科技股七巨头指数跌1.4%，特朗普关税输家指数涨2.4%，散户抱团概念股/迷因股meme stocks指数涨6.5%。 周五鲍威尔释放鸽派信号当天，标普500指数初步收涨1.5%，可选消费板块涨3.2%，能源板块涨2%，电信、原材料、房地产、工业、金融、科技板块至少涨1.2%。 道指初步收涨超800点，成分股卡特彼勒涨4%，家得宝、高盛、美国运通、亚马逊、耐克至少涨约3%，但沃尔玛和VZ仍然跌超1%。 纳斯达克100指数初步收涨逾300点，涨幅1.4%，成分股安森美、ODFL、特斯拉、“比特币持仓大户”Strategy（MSTR）涨超6%，格芯、英特尔、AppLovin、恩智浦至少涨约4.9%，T-Mobile、MNST、Workday、CSX、Intuit至少跌超2%。</a> <font color='red'><strong>[1]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2962703" target="_blank" class="news-link">美国商品期货交易委员会（CFTC）：8月19日当周，投机者的美元空头头寸增加，为7月18日以来首次。</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 04时13分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2962700" target="_blank" class="news-link">CFTC：美国原油看涨情绪创十七年新低</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 04时13分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2962699" target="_blank" class="news-link">美国商品期货交易委员会（CFTC）：8月19日当周，投机者所持COMEX黄金净多头头寸减少12,468手合约，至141,758手合约，创六周新低。</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 04时13分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">7.14%</td>
+                <td class="titles"><div class='new-title'>🆕 [bilibili 热搜] <a href="https://search.bilibili.com/all?keyword=%E5%A4%96%E5%9B%BD%E4%BA%BA%E4%B8%BA%E4%B8%AD%E5%9B%BD%E5%8E%9F%E5%88%9B%E5%86%99%E6%AD%8C" target="_blank" class="news-link">外国人为中国原创写歌</a> [27] <font color='grey'>- 04时13分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">芯片 光刻机</td>
+                <td class="count">1</td>
+                <td class="percentage">7.14%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻] <a href="https://wallstreetcn.com/articles/3753863" target="_blank" class="news-link">央视新闻：起底“隐形内鬼”！警惕这些芯片安装“后门”招数</a> [9] <font color='grey'>- 04时13分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
