@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 47</p><p>生成时间: 2025-08-29 22:11:11</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">9</td>
+                <td class="percentage">19.15%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966263" target="_blank" class="news-link">美国8月密歇根大学1年通胀预期终值 4.8，预期 5，初值 4.9。</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966262" target="_blank" class="news-link">美国8月密歇根大学消费者信心指数终值 58.2，预期 58.6，初值 58.6。</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754558" target="_blank" class="news-link">关税冲击尚且可控！美国7月核心PCE物价指数同比回升至2.9%，符合预期</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966261" target="_blank" class="news-link">美国8月密歇根大学消费者预期指数终值 55.9，预期 57.5，初值 57.2。</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966260" target="_blank" class="news-link">美国8月密歇根大学消费者现况指数终值 61.7，预期 60.8，初值 60.9。</a> [6] <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966259" target="_blank" class="news-link">美国8月密歇根大学5年通胀预期终值 3.5，预期 3.9，初值 3.9。</a> [7] <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966253" target="_blank" class="news-link">提醒：北京时间22:00，将公布美国8月密歇根大学消费者信心指数终值、美国8月密歇根大学1年通胀预期终值、美国8月密歇根大学5年通胀预期终值。</a> [11] <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966251" target="_blank" class="news-link">美国8月芝加哥PMI 41.5，预期 46，前值 47.1。</a> [13] <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2130941" target="_blank" class="news-link">美国关键通胀数据升至近半年新高 阿里巴巴盘前涨超6% | 今夜看点</a> [13] <font color='grey'>- 22时11分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">3</td>
+                <td class="percentage">6.38%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754564" target="_blank" class="news-link">联想控股上半年净利大增144%，营收增20.67%，AI服务器收入同比涨超三倍 | 财报见闻</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻] <a href="https://wallstreetcn.com/articles/3754549" target="_blank" class="news-link">阿里电话会：AI芯片供给有B计划，重申3800亿资本支出，未来三年闪购和即时零售有望带来1万亿元新成交</a> [6] <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754549" target="_blank" class="news-link">阿里电话会：AI芯片供给有B计划，重申3800亿资本支出，未来三年闪购和即时零售有望带来1万亿元新成交</a> [15] <font color='grey'>- 22时11分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">科技</td>
+                <td class="count">2</td>
+                <td class="percentage">4.26%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966248" target="_blank" class="news-link">美股科技股盘初部分走低，英伟达跌超3%，超微电脑跌超2%，AMD跌近2%。</a> [15] <font color='grey'>- 22时11分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966239" target="_blank" class="news-link">美股盘初：三大股指走低，阿里巴巴涨约8%，戴尔科技跌约11%</a> [20] <font color='grey'>- 22时11分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">1</td>
+                <td class="percentage">2.13%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966256" target="_blank" class="news-link">印度Reliance Industries与谷歌公司和Meta Platforms合作，共同推进人工智能（AI）业务。 Reliance董事会主席Mukesh Ambani在年度股东大会上宣布，与这两家美国科技公司构建AI领域的合作伙伴关系。 Reliance将利用谷歌的AI云计算来改善在能源、零售、电信、金融服务等领域的创新（能力）。</a> [9]</div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">2.13%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966249" target="_blank" class="news-link">中国香港与沙特阿拉伯签署一带一路合作谅解备忘录 加强信息交流</a> [14] <font color='grey'>- 22时11分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
