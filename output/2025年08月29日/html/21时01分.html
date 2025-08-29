@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 77</p><p>生成时间: 2025-08-29 21:01:03</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">12</td>
+                <td class="percentage">15.58%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966196" target="_blank" class="news-link">美国7月核心PCE物价指数同比 2.9%，预期 2.9%，前值 2.8%。</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966195" target="_blank" class="news-link">美国7月PCE物价指数同比 2.6%，预期 2.6%，前值 2.6%。</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966194" target="_blank" class="news-link">美国7月PCE物价指数环比 0.2%，预期 0.2%，前值 0.3%。</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966193" target="_blank" class="news-link">美国7月实际个人消费支出(PCE)环比 0.3%，预期 0.3%，前值 0.1%。</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966192" target="_blank" class="news-link">美国7月个人消费支出(PCE)环比 0.5%，预期 0.5%，前值 0.3%。</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754558" target="_blank" class="news-link">关税冲击尚且可控！美国7月核心PCE物价指数同比2.9%，符合预期但创下四个月来最大增幅</a> <font color='red'><strong>[5]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966191" target="_blank" class="news-link">美国7月个人收入环比 0.4%，预期 0.4%，前值 0.3%。</a> [6] <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966190" target="_blank" class="news-link">美国7月核心PCE物价指数环比 0.3%，预期 0.3%，前值 0.3%。</a> [7] <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966186" target="_blank" class="news-link">美国7月零售库存环比 0.2%，预期 0.2%，前值 0.3%。</a> [11] <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966185" target="_blank" class="news-link">美国7月批发库存环比初值 0.2%，预期 0.1%，前值 0.1%。</a> [12] <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966184" target="_blank" class="news-link">美国7月商品贸易帐 -1036亿美元，预期 -902亿美元，前值 -860亿美元。</a> [13] <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966178" target="_blank" class="news-link">提醒：北京时间20:30，美国7月PCE物价指数同比、美国7月商品贸易帐、美国7月零售库存。</a> [17] <font color='grey'>- 21时01分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">2</td>
+                <td class="percentage">2.6%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754555" target="_blank" class="news-link">中国神华上半年营收1381亿元，成本控制见效，自产煤成本同比大幅下降7.7% | 财报见闻</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 21时01分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754534" target="_blank" class="news-link">中国银行上半年营收同比增长3.61%，非利息收入同比增长26.43% | 财报见闻</a> [15] <font color='grey'>- 21时01分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">1</td>
+                <td class="percentage">1.3%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754554" target="_blank" class="news-link">全栈式AI，阿里和谷歌的跨洋呼应</a> [8] <font color='grey'>- 21时01分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">苹果 库克 iphone ipad mac ios</td>
+                <td class="count">1</td>
+                <td class="percentage">1.3%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966183" target="_blank" class="news-link">美联储表示不会在库克听证会上提出论点。</a> [14] <font color='grey'>- 21时01分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">1</td>
+                <td class="percentage">1.3%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2966173" target="_blank" class="news-link">阿里财报电话会：与SAP达成云和AI领域合作</a> [20] <font color='grey'>- 21时01分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
