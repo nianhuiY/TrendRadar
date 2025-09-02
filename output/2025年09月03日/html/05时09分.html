@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 18</p><p>生成时间: 2025-09-03 05:09:22</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2967705" target="_blank" class="news-link">法院反垄断裁决：谷歌不必出售Chrome浏览器</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 05时09分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">苹果 库克 iphone ipad mac ios</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2967708" target="_blank" class="news-link">美股七巨头收盘播报｜英伟达、亚马逊、特斯拉、苹果至多跌超1.9%</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 05时09分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2967703" target="_blank" class="news-link">周二（9月2日），人工智能（AI）赢家指数跌幅收窄至2.39%，AI软件先驱指数跌1.10%，</a> [6] <font color='grey'>- 05时09分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2967702" target="_blank" class="news-link">周二（9月2日），彭博电动汽车价格回报指数跌1.38%，报3023.59点。 成分股Lucid集团、美国雅宝、普拉格动力公司、MP材料、港股蔚来集团至少收跌3.59%表现最差。 在收涨的六只成分股里，“特斯拉劲敌”Rivian涨2.25%涨幅第二大，阿内卡矿业股份涨8.44%。</a> [7]</div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">5.56%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2967697" target="_blank" class="news-link">纳斯达克金龙中国指数收涨0.52%，报7953.95点。 热门中概股里，房多多初步收涨9.4%，小米和理想至多涨约5%，蔚来、阿里、新东方、京东、拼多多至多涨超3%，台积电、小鹏、百胜中国则至多跌约1.8%。 ETF中，富时中国3倍做多ETF（YINN）收涨2.48%，“中国龙”Roundhill China Dragons ETF（DRAG）收涨1.33%，中概互联网指数ETF（KWEB）收涨0.10%，中国科技指数ETF（CQQQ）收跌2.24%。 XtrackersHarvest中证50（ASHS）收跌1.67%，德银嘉实沪深300指数ETF（ASHR）收跌0.63%。</a> [10]</div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
