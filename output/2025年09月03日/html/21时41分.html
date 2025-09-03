@@ -1,0 +1,119 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 65</p><p>生成时间: 2025-09-03 21:41:23</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">4</td>
+                <td class="percentage">6.15%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754842" target="_blank" class="news-link">美国30年期国债收益率再破5%，谷歌盘前涨超6%，现货黄金突破3550美元关口</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 21时41分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968167" target="_blank" class="news-link">美股盘初：纳指涨0.9%，谷歌A涨约7%，苹果涨约3%</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 21时41分</font></div><br><div class='new-title'>🆕 [华尔街见闻] <a href="https://wallstreetcn.com/articles/3754842" target="_blank" class="news-link">美国30年期国债收益率再破5%，谷歌盘前涨超6%，现货黄金突破3550美元关口</a> [8] <font color='grey'>- 21时41分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2134922" target="_blank" class="news-link">美股三大期指涨跌不一 谷歌盘前大涨近7% | 今夜看点</a> [13] <font color='grey'>- 21时41分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">国产 中国</td>
+                <td class="count">4</td>
+                <td class="percentage">6.15%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754869" target="_blank" class="news-link">押注&quot;超级大脑&quot;，BMW豪掷百亿欧元开发Neue Klasse平台，挑战中国电车对手</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 21时41分</font></div><br><div class='new-title'>🆕 [今日头条] <a href="https://www.toutiao.com/trending/7544790208397115431/" target="_blank" class="news-link">中国这场阅兵向世界传递什么信息</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 21时41分</font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3754872" target="_blank" class="news-link">瑞银：中国科技行业正进入新阶段</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 21时41分</font></div><br><div class='new-title'>🆕 [财联社热门] <a href="https://www.cls.cn/detail/2134705" target="_blank" class="news-link">一文揭秘长剑-1000、巨浪-3、东风-61等中国军队装备</a> [12] <font color='grey'>- 21时41分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">美国</td>
+                <td class="count">2</td>
+                <td class="percentage">3.08%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968172" target="_blank" class="news-link">挪威主权财富基金宣布，投资5.426亿美元到美国曼哈顿办公大楼，将对纽约市1177 Avenue of the Americas一栋大楼持股95%。 该公司这次的合作对象为房地产投资公司Beacon Capital Partners。</a> [8]</div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968157" target="_blank" class="news-link">美国圣路易斯联储主席Alberto Musalem：预计劳动力市场将降温，维持在接近充分就业的水平。 近期数据显示劳动力市场下行风险加大。 预计下半年的经济增速与上半年的1.4%相似。 过于看重任何一项使命都会带来风险。 疲软的房地产市场给经济带来下行风险。 适度紧缩政策与经济数据相符。 关税影响将持续2-3季度后消退。 平衡通胀与就业风险是关键。</a> [14]</div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">chatgpt Sam Altman openai</td>
+                <td class="count">1</td>
+                <td class="percentage">1.54%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968170" target="_blank" class="news-link">翻译初创公司DeepL面向企业推出人工智能（AI）代理AI DeepL Agent，挑战OpenAI、Anthropic、微软等玩家。 DeepL Agent用于完成“重复的，时间密集的任务跨越各种各样的功能”。 这家创立于2017年的公司海侧重于在翻译领域使用AI。</a> [6]</div></td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td class="word">机器人</td>
+                <td class="count">1</td>
+                <td class="percentage">1.54%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968143" target="_blank" class="news-link">优必选宣布获得2.5亿元具身智能人形机器人产品及解决方案采购合同</a> [22] <font color='grey'>- 21时41分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td class="word">科技</td>
+                <td class="count">1</td>
+                <td class="percentage">1.54%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968161" target="_blank" class="news-link">极米科技回应筹划H股上市：主要出于海外品牌的考量</a> [11] <font color='grey'>- 21时41分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
