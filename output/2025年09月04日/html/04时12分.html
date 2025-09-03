@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 11</p><p>生成时间: 2025-09-04 04:12:32</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">3</td>
+                <td class="percentage">27.27%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968271" target="_blank" class="news-link">美国卫生部长RFK Jr.（此前因反对新冠疫苗接种而为人所知）采取“精挑细选的”行动，向疫苗顾问委员会增添成员。</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 04时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968269" target="_blank" class="news-link">据美国纽约联储数据，上个交易日（9月2日）担保隔夜融资利率（SOFR）报4.39%，之前一天报4.34%。 上个交易日有效的联邦基金利率报4.33%，之前一天报4.33%。</a> <font color='red'><strong>[5]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968259" target="_blank" class="news-link">美国参议院共和党成员Thom Tillis希望美国法院能先对美联储理事Lisa Cook（被总统特朗普指控的抵押贷款欺诈）官司做出判决，然后再考虑取代Cook的人选。（Political）</a> [11] <font color='grey'>- 04时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">2</td>
+                <td class="percentage">18.18%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968273" target="_blank" class="news-link">法国AI初创公司按140亿美元估值进行新一轮融资，将根据协议募集23亿美元。</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 04时12分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968270" target="_blank" class="news-link">加拿大石油重镇Alberta省7月石油产量达到432万桶/日，创历史新高。 众多油砂公司提高产量，来迎合经过项目扩建的Trans Mountain输油管道。</a> <font color='red'><strong>[4]</strong></font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">chatgpt Sam Altman openai</td>
+                <td class="count">1</td>
+                <td class="percentage">9.09%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968267" target="_blank" class="news-link">报道：OpenAI估值达到5000亿美元</a> [6] <font color='grey'>- 04时12分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">9.09%</td>
+                <td class="titles"><div class='new-title'>🆕 [微博] <a href="https://m.weibo.cn/search?containerid=100103type%3D1%26t%3D10%26q%3D%23%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A5%E9%93%AE%E9%93%AE%E9%93%81%E9%AA%A8%E6%88%98%E5%BC%BA%E6%95%8C%23&amp;stream_entry_id=31&amp;isnewpage=1&amp;extparam=seat%3D1%26band_rank%3D19%26filter_type%3Drealtimehot%26c_type%3D31%26pos%3D19%26q%3D%2523%25E4%25B8%25AD%25E5%259B%25BD%25E4%25BA%25BA%25E6%25B0%2591%25E4%25BB%25A5%25E9%2593%25AE%25E9%2593%25AE%25E9%2593%2581%25E9%25AA%25A8%25E6%2588%2598%25E5%25BC%25BA%25E6%2595%258C%2523%26dgr%3D0%26stream_entry_id%3D31%26cate%3D5001%26lcate%3D5001%26realpos%3D19%26flag%3D1%26display_time%3D1756929359%26pre_seqid%3D17569293589870338055" target="_blank" class="news-link">中国人民以铮铮铁骨战强敌</a> [19] <font color='grey'>- 04时12分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
