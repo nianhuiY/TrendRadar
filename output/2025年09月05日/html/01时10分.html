@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 25</p><p>生成时间: 2025-09-05 01:10:32</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">3</td>
+                <td class="percentage">12.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968870" target="_blank" class="news-link">提醒：美国卫生部长RFK Jr.在参议院金融委员会的听证会结束。</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 01时10分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968860" target="_blank" class="news-link">美联储威廉姆斯：我认为，整体服务通胀趋势向好。 其他指标表明，（美国的）服务型经济正在正常化。 预计关税不会造成持久的通胀。</a> [11]</div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968856" target="_blank" class="news-link">美联储威廉姆斯：美国就业市场仍然处于合理的良好状态。 疲数据表明，消费者似乎已经表现得有些“摇摇欲坠”。 但硬数据尚未体现出消费者这样的状态。 经济的供给侧的变化相当大。</a> [14]</div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">ai 人工智能</td>
+                <td class="count">2</td>
+                <td class="percentage">8.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968868" target="_blank" class="news-link">美联储调查：企业AI普及率提升，就业冲击暂不明显</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 01时10分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968854" target="_blank" class="news-link">先锋领航首席经济学家兼投资策略主管Joe Davis：随着人工智能（AI）的转移，美国股市将在好几年的时间里输给北方邻国加拿大。 加拿大股市正在2025年跑赢美股，这才刚刚开始而已，预计将在未来5-7年持续。</a> [16]</div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">国产 中国</td>
+                <td class="count">2</td>
+                <td class="percentage">8.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2968855" target="_blank" class="news-link">【普京称将回应中国对俄试行免签】俄罗斯总统普京9月4日表示，中国将对俄罗斯公民试行免签政策意义重大，俄方感谢中国领导人，并将作出回应。中国外交部9月2日宣布，中方决定扩大免签国家范围，自2025年9月15日至2026年9月14日，对俄罗斯持普通护照人员试行免签政策。（CCTV国际时讯）</a> [15] <font color='grey'>- 01时10分</font></div><br><div class='new-title'>🆕 [抖音] <a href="https://www.douyin.com/hot/2225913" target="_blank" class="news-link">外国博主点赞中国阅兵</a> [28] <font color='grey'>- 01时10分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">芯片 光刻机</td>
+                <td class="count">1</td>
+                <td class="percentage">4.0%</td>
+                <td class="titles"><div class='new-title'>🆕 [知乎] <a href="https://www.zhihu.com/question/1946953885391484408" target="_blank" class="news-link">如何看待华为 Mate XTs 三折叠手机官宣搭载麒麟 9020 芯片，性能上有哪些突破？</a> [17] <font color='grey'>- 01时10分</font></div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
