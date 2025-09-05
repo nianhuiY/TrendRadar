@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>频率词统计报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            h1, h2 { color: #333; }
+            table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            .word { font-weight: bold; }
+            .count { text-align: center; }
+            .percentage { text-align: center; }
+            .titles { max-width: 500px; }
+            .source { color: #666; font-style: italic; }
+            .error { color: #d9534f; }
+            .news-link { 
+                color: #007bff; 
+                text-decoration: none; 
+                border-bottom: 1px dotted #007bff;
+            }
+            .news-link:hover { 
+                color: #0056b3; 
+                text-decoration: underline; 
+            }
+            .news-link:visited { 
+                color: #6f42c1; 
+            }
+            .no-link { 
+                color: #333; 
+            }
+            .new-title {
+                background-color: #fff3cd;
+                border: 1px solid #ffc107;
+                border-radius: 3px;
+                padding: 2px 6px;
+                margin: 2px 0;
+            }
+            .new-section {
+                background-color: #d1ecf1;
+                border: 1px solid #bee5eb;
+                border-radius: 5px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .new-section h3 {
+                color: #0c5460;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>频率词统计报告</h1>
+    <p>报告类型: 实时分析</p><p>总标题数: 16</p><p>生成时间: 2025-09-06 05:09:46</p>
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>频率词</th>
+                <th>出现次数</th>
+                <th>占比</th>
+                <th>相关标题</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td class="word">美国</td>
+                <td class="count">6</td>
+                <td class="percentage">37.5%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969594" target="_blank" class="news-link">周五（9月5日）纽约尾盘，美元兑日元跌0.72%，报147.42日元，北京时间20:30发布美国非农就业报告后跳水，本周累计上涨0.24%，整体交投区间为146.79-149.14日元，呈现出n形冲高回落。</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 05时09分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969592" target="_blank" class="news-link">在美上市印度ETF收跌0.21%，报52.48美元，盘后涨0.05%。 美国总统特朗普认为，与印度总理莫迪关系良好。 他对印度购买俄罗斯石油感到失望。</a> <font color='red'><strong>[3]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3755059" target="_blank" class="news-link">非农就业惨淡，美国房贷利率创一年多最大单日跌幅，跌至近一年新低</a> <font color='red'><strong>[3]</strong></font> <font color='grey'>- 05时09分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969591" target="_blank" class="news-link">美国总统特朗普：我很快就会谈到（最新发布的）非农就业报告。</a> <font color='red'><strong>[4]</strong></font> <font color='grey'>- 05时09分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969590" target="_blank" class="news-link">WTI原油期货跌2.22%，暂报61.30美元。 据美联社报道，美国将和欧盟在下周一讨论对俄罗斯实施新的制裁。 美国总统特朗普签署命令，把五角大楼称为战争部 特朗普称，鉴于世界局势，战争部这个名称更好。 特朗普认为，（一系列）和平协议的达成源于贸易和实力。 特朗普谈乌克兰安全保障，称“我们会帮助他们”。 美国国防部长海格塞斯认为，美国将采取攻势，而不只是守势。</a> <font color='red'><strong>[5]</strong></font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969577" target="_blank" class="news-link">美国非农就业报告发布当天，标普500指数收跌20.58点，跌幅0.32%，报6481.50点，本周（周一/9月1日休市）累计上涨0.33%，整体持续震荡上行，但非农就业报告发布后显著回落。 道琼斯工业平均指数收跌220.43点，跌幅0.48%，报45400.86点，本周累跌0.32%。 纳斯达克综合指数（纳指）收跌7.306点，跌幅0.03%，报21700.388点，本周累涨1.14%。 纳斯达克100指数收涨19.43点，涨幅0.08%，报23652.443点，本周累涨1.01%。</a> [15]</div></td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td class="word">谷歌 google gemini deepmind</td>
+                <td class="count">2</td>
+                <td class="percentage">12.5%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969593" target="_blank" class="news-link">谷歌母公司Alphabet预计将在2025年三季度计提29.5亿欧元（来自欧盟的反垄断）罚款。</a> <font color='red'><strong>[2]</strong></font> <font color='grey'>- 05时09分</font></div><br><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969589" target="_blank" class="news-link">美股七巨头收盘播报｜英伟达在非农日收跌2.7%，本周跌超4%连跌四周，谷歌A累涨超10%</a> [6] <font color='grey'>- 05时09分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td class="word">汽车 自动驾驶</td>
+                <td class="count">1</td>
+                <td class="percentage">6.25%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 最新咨询] <a href="https://wallstreetcn.com/articles/3755058" target="_blank" class="news-link">美国移民执法行动突袭现代汽车工厂，300人被捕或冲击美韩投资关系</a> <font color='red'><strong>[1]</strong></font> <font color='grey'>- 05时09分</font></div></td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td class="word">国产 中国</td>
+                <td class="count">1</td>
+                <td class="percentage">6.25%</td>
+                <td class="titles"><div class='new-title'>🆕 [华尔街见闻 实时快讯] <a href="https://wallstreetcn.com/livenews/2969575" target="_blank" class="news-link">美国非农就业报告发布当天，纳斯达克金龙中国指数收涨1.16%，报7942.23点，本周（四个交易日）累计上涨0.38%。 热门中概股里，房多多涨32%，百度、阿里巴巴、台积电涨超3%，京东涨1.5%，网易、拼多多、百胜中国等至多涨0.8%，新东方则跌0.1%，理想跌1.3%，蔚来跌3%。 ETF中，富时中国3倍做多ETF（YINN）收涨3.89%，中国科技指数ETF（CQQQ）收涨2.99%，“中国龙”Roundhill China Dragons ETF（DRAG）收涨1.46%，中概互联网指数ETF（KWEB）收涨1.32%。 XtrackersHarvest中证50（ASHS）收涨3.64%，德银嘉实沪深300指数ETF（ASHR）收涨2.30%。</a> [16]</div></td>
+            </tr>
+        
+        </table>
+    
+    </body>
+    </html>
+    
