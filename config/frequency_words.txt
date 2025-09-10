@@ -7,14 +7,12 @@ gemini
 deepmind
 
 chatgpt
-Sam Altman
 openai
+sora
 
 claude
 Anthropic
 
-苹果
-库克
 iphone
 ipad
 mac
@@ -24,7 +22,6 @@ ai
 !gai
 人工智能
 
-汽车
 自动驾驶
 
 机器人
@@ -33,6 +30,8 @@ ai
 中国
 
 美国
+日本
+韩国
 
 芯片
 光刻机
@@ -40,6 +39,9 @@ ai
 科技
 
 核能
+
+水电站
+雅鲁藏布江
 
 新质生产力
 
