@@ -1,0 +1,752 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>热点新闻分析</title>
+        <style>
+            * { box-sizing: border-box; }
+            body { 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+                margin: 0; 
+                padding: 16px; 
+                background: #fafafa;
+                color: #333;
+                line-height: 1.5;
+            }
+            
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+            }
+            
+            .header {
+                background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+                color: white;
+                padding: 32px 24px;
+                text-align: center;
+            }
+            
+            .header-title {
+                font-size: 22px;
+                font-weight: 700;
+                margin: 0 0 20px 0;
+            }
+            
+            .header-info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+                font-size: 14px;
+                opacity: 0.95;
+            }
+            
+            .info-item {
+                text-align: center;
+            }
+            
+            .info-label {
+                display: block;
+                font-size: 12px;
+                opacity: 0.8;
+                margin-bottom: 4px;
+            }
+            
+            .info-value {
+                font-weight: 600;
+                font-size: 16px;
+            }
+            
+            .content {
+                padding: 24px;
+            }
+            
+            .word-group {
+                margin-bottom: 40px;
+            }
+            
+            .word-group:first-child {
+                margin-top: 0;
+            }
+            
+            .word-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            
+            .word-info {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            
+            .word-name {
+                font-size: 17px;
+                font-weight: 600;
+                color: #1a1a1a;
+            }
+            
+            .word-count {
+                color: #666;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            
+            .word-count.hot { color: #dc2626; font-weight: 600; }
+            .word-count.warm { color: #ea580c; font-weight: 600; }
+            
+            .word-index {
+                color: #999;
+                font-size: 12px;
+            }
+            
+            .news-item {
+                margin-bottom: 20px;
+                padding: 16px 0;
+                border-bottom: 1px solid #f5f5f5;
+                position: relative;
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+            
+            .news-item:last-child {
+                border-bottom: none;
+            }
+            
+            .news-item.new::after {
+                content: "NEW";
+                position: absolute;
+                top: 12px;
+                right: 0;
+                background: #fbbf24;
+                color: #92400e;
+                font-size: 9px;
+                font-weight: 700;
+                padding: 3px 6px;
+                border-radius: 4px;
+                letter-spacing: 0.5px;
+            }
+            
+            .news-number {
+                color: #999;
+                font-size: 13px;
+                font-weight: 600;
+                min-width: 20px;
+                text-align: center;
+                flex-shrink: 0;
+                background: #f8f9fa;
+                border-radius: 50%;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: flex-start;
+                margin-top: 8px;
+            }
+            
+            .news-content {
+                flex: 1;
+                min-width: 0;
+                padding-right: 40px;
+            }
+            
+            .news-item.new .news-content {
+                padding-right: 50px;
+            }
+            
+            .news-header {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 8px;
+                flex-wrap: wrap;
+            }
+            
+            .source-name {
+                color: #666;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            
+            .rank-num {
+                color: #fff;
+                background: #6b7280;
+                font-size: 10px;
+                font-weight: 700;
+                padding: 2px 6px;
+                border-radius: 10px;
+                min-width: 18px;
+                text-align: center;
+            }
+            
+            .rank-num.top { background: #dc2626; }
+            .rank-num.high { background: #ea580c; }
+            
+            .time-info {
+                color: #999;
+                font-size: 11px;
+            }
+            
+            .count-info {
+                color: #059669;
+                font-size: 11px;
+                font-weight: 500;
+            }
+            
+            .news-title {
+                font-size: 15px;
+                line-height: 1.4;
+                color: #1a1a1a;
+                margin: 0;
+            }
+            
+            .news-link {
+                color: #2563eb;
+                text-decoration: none;
+            }
+            
+            .news-link:hover {
+                text-decoration: underline;
+            }
+            
+            .news-link:visited {
+                color: #7c3aed;
+            }
+            
+            .new-section {
+                margin-top: 40px;
+                padding-top: 24px;
+                border-top: 2px solid #f0f0f0;
+            }
+            
+            .new-section-title {
+                color: #1a1a1a;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 20px 0;
+            }
+            
+            .new-source-group {
+                margin-bottom: 24px;
+            }
+            
+            .new-source-title {
+                color: #666;
+                font-size: 13px;
+                font-weight: 500;
+                margin: 0 0 12px 0;
+                padding-bottom: 6px;
+                border-bottom: 1px solid #f5f5f5;
+            }
+            
+            .new-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 8px 0;
+                border-bottom: 1px solid #f9f9f9;
+            }
+            
+            .new-item:last-child {
+                border-bottom: none;
+            }
+            
+            .new-item-number {
+                color: #999;
+                font-size: 12px;
+                font-weight: 600;
+                min-width: 18px;
+                text-align: center;
+                flex-shrink: 0;
+                background: #f8f9fa;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .new-item-rank {
+                color: #fff;
+                background: #6b7280;
+                font-size: 10px;
+                font-weight: 700;
+                padding: 3px 6px;
+                border-radius: 8px;
+                min-width: 20px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            
+            .new-item-rank.top { background: #dc2626; }
+            .new-item-rank.high { background: #ea580c; }
+            
+            .new-item-content {
+                flex: 1;
+                min-width: 0;
+            }
+            
+            .new-item-title {
+                font-size: 14px;
+                line-height: 1.4;
+                color: #1a1a1a;
+                margin: 0;
+            }
+            
+            .error-section {
+                background: #fef2f2;
+                border: 1px solid #fecaca;
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+            
+            .error-title {
+                color: #dc2626;
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0 0 8px 0;
+            }
+            
+            .error-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .error-item {
+                color: #991b1b;
+                font-size: 13px;
+                padding: 2px 0;
+                font-family: 'SF Mono', Consolas, monospace;
+            }
+            
+            @media (max-width: 480px) {
+                body { padding: 12px; }
+                .header { padding: 24px 20px; }
+                .content { padding: 20px; }
+                .header-info { grid-template-columns: 1fr; gap: 12px; }
+                .news-header { gap: 6px; }
+                .news-content { padding-right: 45px; }
+                .news-item { gap: 8px; }
+                .new-item { gap: 8px; }
+                .news-number { width: 20px; height: 20px; font-size: 12px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-title">热点新闻分析</div>
+                <div class="header-info">
+                    <div class="info-item">
+                        <span class="info-label">报告类型</span>
+                        <span class="info-value">实时分析</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">新闻总数</span>
+                        <span class="info-value">69 条</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">热点新闻</span>
+                        <span class="info-value">32 条</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">生成时间</span>
+                        <span class="info-value">11-20 23:18</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="word-group">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">美国 日本 韩国</div>
+                            <div class="word-count hot">15 条</div>
+                        </div>
+                        <div class="word-index">1/6</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num top">1</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008039" target="_blank" class="news-link">美联储理事Barr：股市影响到（美国）富裕阶层的开支。</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 最新咨询</span><span class="rank-num top">2</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3759826" target="_blank" class="news-link">美国10月成屋销售总数年化创八个月新高</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">3</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 最新咨询</span><span class="rank-num top">3</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3759824" target="_blank" class="news-link">王文涛部长会见美国驻华大使庞德伟</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">4</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 最新咨询</span><span class="rank-num high">4</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3759822" target="_blank" class="news-link">美国上周首申人数回落至22万人，续请失业金人数攀升至4年来最高水平</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">5</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻</span><span class="rank-num ">8</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3759821" target="_blank" class="news-link">美国9月非农新增就业11.9万人大超预期，失业率意外升至4.4%创四年来最高纪录</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">6</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">凤凰网</span><span class="rank-num ">8</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://news.ifeng.com/c/8oRT8S59v3h" target="_blank" class="news-link">订单大量取消，日本旅游业日子“很难过”</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">7</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num ">11</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/politics/202511/2057825.html" target="_blank" class="news-link">美国新和平方案 要乌克兰割地裁军</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">8</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">13</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008025" target="_blank" class="news-link">王文涛部长会见美国驻华大使庞德伟</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">9</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">14</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008024" target="_blank" class="news-link">美国劳工部长Chavez-Deremer：新增的9.7万就业人口来自私人部门。 制造业数据并非我们希望看到的水平。（福克斯商业频道）</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">10</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">17</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008019" target="_blank" class="news-link">据美国纽约联储数据，上个交易日（11月19日，美联储会议纪要发布当天）担保隔夜融资利率（SOFR）报3.91%，之前一天报3.94%。 上个交易日有效的联邦基金利率报3.88%，之前一天报3.88%。</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">11</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">澎湃新闻</span><span class="rank-num ">17</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://m.thepaper.cn/newsDetail_forward_32006870" target="_blank" class="news-link">视频丨超54万张飞往日本机票被取消，日本旅游遭遇“退订寒潮”</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">12</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">微博</span><span class="rank-num ">17</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://s.weibo.com/weibo?q=%23%E7%BE%8E%E5%9B%BD%E5%AF%B9%E4%B8%AD%E6%97%A5%E5%85%B3%E7%B3%BB%E6%8C%81%E8%B0%A8%E6%85%8E%E6%80%81%E5%BA%A6%23&amp;t=31&amp;band_rank=17&amp;Refer=top" target="_blank" class="news-link">美国对中日关系持谨慎态度</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">13</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">21</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008014" target="_blank" class="news-link">任天堂和《战地 6》推动美国10月游戏销量增长</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">14</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">百度热搜</span><span class="rank-num ">23</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.baidu.com/s?wd=%E9%83%91%E4%B8%BD%E6%96%87%EF%BC%9A%E5%8F%B0%E6%B5%B7%E6%97%A0%E4%BA%8B+%E6%97%A5%E6%9C%AC%E6%89%8D%E8%83%BD%E6%97%A0%E4%BA%8B" target="_blank" class="news-link">郑丽文：台海无事 日本才能无事</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">15</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">今日头条</span><span class="rank-num ">28</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.toutiao.com/trending/7574775172914220554/" target="_blank" class="news-link">日本首次出口爱国者导弹释放何信号</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">国产 中国</div>
+                            <div class="word-count warm">7 条</div>
+                        </div>
+                        <div class="word-index">2/6</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num top">3</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/china/202511/2057833.html" target="_blank" class="news-link">越南廉航越捷航空或恢复运营中国国产C909客机</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num high">5</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/china/202511/2057831.html" target="_blank" class="news-link">中国远洋测量船和美军在北太平洋活动日益频繁</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">3</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num ">6</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/taiwan/202511/2057830.html" target="_blank" class="news-link">中国商务部指高市早苗涉台言论 为中日经贸带来“严重负面影响”</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">4</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num ">7</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/china/202511/2057829.html" target="_blank" class="news-link">中国长安汽车进入印尼市场</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">5</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num ">10</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/china/202511/2057826.html" target="_blank" class="news-link">下午察：中国人不去日本旅游 真的只有日本损失？</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">6</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">10</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008028" target="_blank" class="news-link">纳斯达克金龙中国指数盘初涨1%。 热门中概股万国数据涨6.9%，世纪互联涨5.9%，文远知行涨5.3%，小马智行涨3.9%，网易涨2.5%，京东、蔚来至多涨1.7%，阿里、百度、再鼎医药至多涨超0.9%。 携程则跌1.4%，奇富科技跌1.5%，新东方跌1.9%，大全新能源跌2.2%，阿特斯太阳能跌3%。 富时A50夜期涨超0.15%，刷新日高。</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">7</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">今日头条</span><span class="rank-num ">19</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.toutiao.com/trending/7574719541805973545/" target="_blank" class="news-link">新晋央企中国雅江集团出手买地</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">科技</div>
+                            <div class="word-count ">4 条</div>
+                        </div>
+                        <div class="word-index">3/6</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">联合早报</span><span class="rank-num high">4</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zaochenbao.com/news/Chronicles/202511/2057832.html" target="_blank" class="news-link">荷兰暂停部长令但法庭裁决仍生效 闻泰科技称对安世控制权受限</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num high">5</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008033" target="_blank" class="news-link">标普500指数的11个板块中，科技板块盘初涨2.38%，电信板块涨2.02%，可选消费板块涨1.7%。</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">3</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">6</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008032" target="_blank" class="news-link">行业ETF美股盘初普遍上涨，半导体ETF涨2.49%，科技行业ETF涨2.19%，全球科技股指数ETF涨2.17%，银行业ETF涨1.89%，可选消费ETF、网络股指数ETF涨超1.50%，能源业ETF涨0.73%。</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">4</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">凤凰网</span><span class="rank-num ">10</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://news.ifeng.com/c/8oRWo0HxA1j" target="_blank" class="news-link">闻泰科技：荷兰不仅应永久性撤销行政令，还应确保中方股东控制权</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">ai 人工智能</div>
+                            <div class="word-count ">3 条</div>
+                        </div>
+                        <div class="word-index">4/6</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num top">2</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008038" target="_blank" class="news-link">普京：要求俄总统办公厅和政府考虑设立一个领导部门，管理俄所有AI事务</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num top">3</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008037" target="_blank" class="news-link">普京：俄应在生成式人工智能领域掌握全套自主技术</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">3</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num high">4</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008036" target="_blank" class="news-link">美联储理事Barr：人工智能（AI）给美国GDP带来重大的增长。 AI还没有带来生产力增长的效应。</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">谷歌 google gemini deepmind</div>
+                            <div class="word-count ">2 条</div>
+                        </div>
+                        <div class="word-index">5/6</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 最新咨询</span><span class="rank-num top">1</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/articles/3759827" target="_blank" class="news-link">谷歌公司新推图像生成模型，名叫Nano Banana Pro</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">2</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">华尔街见闻 实时快讯</span><span class="rank-num ">11</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://wallstreetcn.com/livenews/3008034" target="_blank" class="news-link">谷歌涨3.2%总市值达到3.65万亿美元，略超过微软公司，进入美股总市值前三。</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="word-group">
+                    <div class="word-header">
+                        <div class="word-info">
+                            <div class="word-name">月球 登月 火星 宇宙 飞船</div>
+                            <div class="word-count ">1 条</div>
+                        </div>
+                        <div class="word-index">6/6</div>
+                    </div>
+                    <div class="news-item new">
+                        <div class="news-number">1</div>
+                        <div class="news-content">
+                            <div class="news-header">
+                                <span class="source-name">知乎</span><span class="rank-num ">7</span><span class="time-info">23时18分</span>
+                            </div>
+                            <div class="news-title"><a href="https://www.zhihu.com/question/1973306599096410151" target="_blank" class="news-link">嫦娥六号月球样品中首次发现晶质赤铁矿，这一发现有哪些重要意义？</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
